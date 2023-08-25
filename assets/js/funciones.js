@@ -90,6 +90,6 @@ function cuadro(dimension) {
 }
 
 function calcular_intereses(cantidad) {
-        alert(cantidad*(0.5))
+        alert(`Los intereses de ${cantidad} pesos, son ${cantidad *(0.5)} pesos.`)
 }
 
