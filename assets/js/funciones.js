@@ -90,6 +90,14 @@ function cuadro(dimension) {
 }
 
 function calcular_intereses(cantidad) {
-        alert(`Los intereses de ${cantidad} pesos, son ${cantidad *(0.5)} pesos.`)
+    let interesPorMes = cantidad *(0.05)
+        alert(`Los intereses de ${cantidad} pesos, son ${interesPorMes} pesos.`)
+        alert("Digite la cantidad de meses")
+        calcular_cuotas(digite(), interesPorMes, cantidad)
+}
+
+function calcular_cuotas(meses, interesPorMes, cantidad) {
+    alert(`Los intereses de ${cantidad} pesos, son ${interesPorMes} pesos por mes, para ${meses} cuotas mensuales de ${((meses*interesPorMes)+(cantidad))/meses} pesos.`)
+            
 }
 
